@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     boolean twoNumbers = false;
     private TextView firstNumber;
     private TextView secondNumber;
+
     private Button num7;
     private Button num8;
     private Button num9;
@@ -67,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
                 twoNumbers = true;
                 break;
         }
-        return;
     }
 
     public void pressEight(View view) {
@@ -80,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                 twoNumbers = true;
                 break;
         }
-        return;
     }
 
     public void pressNine(View view) {
@@ -93,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 twoNumbers = true;
                 break;
         }
-        return;
     }
 
     public void pressFour(View view) {
@@ -106,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
                 twoNumbers = true;
                 break;
         }
-        return;
     }
 
     public void pressFive(View view) {
@@ -119,7 +116,6 @@ public class MainActivity extends AppCompatActivity {
                 twoNumbers = true;
                 break;
         }
-        return;
     }
 
     public void pressSix(View view) {
@@ -132,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
                 twoNumbers = true;
                 break;
         }
-        return;
     }
 
     public void pressOne(View view) {
@@ -145,7 +140,6 @@ public class MainActivity extends AppCompatActivity {
                 twoNumbers = true;
                 break;
         }
-        return;
     }
 
     public void pressTwo(View view) {
@@ -158,7 +152,6 @@ public class MainActivity extends AppCompatActivity {
                 twoNumbers = true;
                 break;
         }
-        return;
     }
 
     public void pressThree(View view) {
@@ -171,7 +164,6 @@ public class MainActivity extends AppCompatActivity {
                 twoNumbers = true;
                 break;
         }
-        return;
     }
 
     public void pressZero(View view) {
@@ -183,14 +175,13 @@ public class MainActivity extends AppCompatActivity {
                 secondNumber.setText(secondNumber.getText().toString() + "0");
                 break;
         }
-        return;
     }
 
     // Operations
     public void add(View view) {
         switch (stage) {
             case 1:
-                if (firstNumber.getText().toString() != "") {
+                if (!firstNumber.getText().toString().equals("")) {
                     number1 = Integer.parseInt(firstNumber.getText().toString());
                     firstNumber.setText(firstNumber.getText().toString() + " + ");
                     stage = 2;
@@ -198,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 2:
-                if (secondNumber.getText().toString() == "") {
+                if (secondNumber.getText().toString().equals("")) {
                     firstNumber.setText("" + number1 + " + ");
                     operation = 1;
                     stage = 2;
@@ -213,13 +204,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         twoNumbers = false;
-        return;
     }
 
     public void subtract(View view) {
         switch (stage) {
             case 1:
-                if (firstNumber.getText().toString() != "") {
+                if (!firstNumber.getText().toString().equals("")) {
                     number1 = Integer.parseInt(firstNumber.getText().toString());
                     firstNumber.setText(firstNumber.getText().toString() + " - ");
                     stage = 2;
@@ -227,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 2:
-                if (secondNumber.getText().toString() == "") {
+                if (secondNumber.getText().toString().equals("")) {
                     firstNumber.setText("" + number1 + " - ");
                     operation = 2;
                     stage = 2;
@@ -242,13 +232,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         twoNumbers = false;
-        return;
     }
 
     public void multiply(View view) {
         switch (stage) {
             case 1:
-                if (firstNumber.getText().toString() != "") {
+                if (!firstNumber.getText().toString().equals("")) {
                     number1 = Integer.parseInt(firstNumber.getText().toString());
                     firstNumber.setText(firstNumber.getText().toString() + " x ");
                     stage = 2;
@@ -256,7 +245,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 2:
-                if (secondNumber.getText().toString() == "") {
+                if (secondNumber.getText().toString().equals("")) {
                     firstNumber.setText("" + number1 + " x ");
                     operation = 3;
                     stage = 2;
@@ -271,13 +260,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         twoNumbers = false;
-        return;
     }
 
     public void divide(View view) {
         switch (stage) {
             case 1:
-                if (firstNumber.getText().toString() != "") {
+                if (!firstNumber.getText().toString().equals("")) {
                     number1 = Integer.parseInt(firstNumber.getText().toString());
                     firstNumber.setText(firstNumber.getText().toString() + " / ");
                     stage = 2;
@@ -285,7 +273,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 2:
-                if (secondNumber.getText().toString() == "") {
+                if (secondNumber.getText().toString().equals("")) {
                     firstNumber.setText("" + number1 + " / ");
                     operation = 4;
                     stage = 2;
@@ -300,12 +288,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         twoNumbers = false;
-        return;
     }
 
     public void equal(View view) {
         if (stage != 1) {
-            if (twoNumbers == true) {
+            if (twoNumbers) {
                 number2 = Integer.parseInt(secondNumber.getText().toString());
                 number1 = doMath(number1, number2, operation);
                 firstNumber.setText("" + number1);
@@ -316,7 +303,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Invalid operation!", Toast.LENGTH_SHORT).show();
             }
         }
-        return;
     }
 
     public void delete(View view) {
@@ -325,7 +311,6 @@ public class MainActivity extends AppCompatActivity {
         stage = 1;
         operation = 0;
         twoNumbers = false;
-        return;
     }
 
 

@@ -57,11 +57,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="pressSeven"
-                android:text="7"
+                android:text="@string/seven"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/number4"
@@ -70,11 +69,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="pressFour"
-                android:text="4"
+                android:text="@string/four"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/number1"
@@ -83,11 +81,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="pressOne"
-                android:text="1"
+                android:text="@string/one"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/decimalPoint"
@@ -95,11 +92,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="."
+                android:text="@string/decimalPoint"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -116,11 +112,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="pressEight"
-                android:text="8"
+                android:text="@string/eight"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/number5"
@@ -129,11 +124,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="pressFive"
-                android:text="5"
+                android:text="@string/five"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/number2"
@@ -142,11 +136,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="pressTwo"
-                android:text="2"
+                android:text="@string/two"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/number0"
@@ -155,11 +148,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="pressZero"
-                android:text="0"
+                android:text="@string/zero"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -176,11 +168,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="pressNine"
-                android:text="9"
+                android:text="@string/nine"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/number6"
@@ -189,12 +180,11 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="pressSix"
-                android:text="6"
+                android:text="@string/six"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
                 android:textColorLink="@color/colorAccent"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/number3"
@@ -203,11 +193,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="pressThree"
-                android:text="3"
+                android:text="@string/three"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/delete"
@@ -216,11 +205,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="delete"
-                android:text="DEL"
+                android:text="@string/delete"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="24sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -238,11 +226,10 @@
                 android:layout_weight="1"
                 android:background="#909090"
                 android:onClick="divide"
-                android:text="÷"
+                android:text="@string/divide"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/multiplication"
@@ -252,11 +239,10 @@
                 android:layout_weight="1"
                 android:background="#909090"
                 android:onClick="multiply"
-                android:text="x"
+                android:text="@string/multiply"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/subtraction"
@@ -266,11 +252,10 @@
                 android:layout_weight="1"
                 android:background="#909090"
                 android:onClick="subtract"
-                android:text="-"
+                android:text="@string/minus"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/addition"
@@ -280,11 +265,10 @@
                 android:layout_weight="1"
                 android:background="#909090"
                 android:onClick="add"
-                android:text="+"
+                android:text="@string/plus"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/equal"
@@ -294,11 +278,10 @@
                 android:layout_weight="1"
                 android:background="#00d2ff"
                 android:onClick="equal"
-                android:text="="
+                android:text="@string/equal"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="30sp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
