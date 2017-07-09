@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#333333"
     android:orientation="vertical"
-    tools:context="com.example.stefan.test2.MainActivity">
+    tools:context="com.example.stefan.calculator.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +21,8 @@
             android:background="#000000"
             android:gravity="bottom"
             android:textColor="#FFFFFF"
-            android:textSize="36sp" />
+            android:textSize="36sp"
+            tools:ignore="NestedWeights" />
 
         <TextView
             android:id="@+id/secondNumber"
@@ -30,7 +30,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:background="#000000"
-            android:gravity="left"
+            android:gravity="start"
             android:textColor="#FFFFFF"
             android:textSize="36sp" />
     </LinearLayout>
@@ -39,14 +39,16 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="6"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:id="@+id/firstRow"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
 
             <Button
                 android:id="@+id/number7"
@@ -58,7 +60,8 @@
                 android:text="7"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/number4"
@@ -70,7 +73,8 @@
                 android:text="4"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/number1"
@@ -82,7 +86,8 @@
                 android:text="1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/decimalPoint"
@@ -93,7 +98,8 @@
                 android:text="."
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
 
         <LinearLayout
@@ -113,7 +119,8 @@
                 android:text="8"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/number5"
@@ -125,7 +132,8 @@
                 android:text="5"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/number2"
@@ -137,7 +145,8 @@
                 android:text="2"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/number0"
@@ -149,7 +158,8 @@
                 android:text="0"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
 
         <LinearLayout
@@ -169,7 +179,8 @@
                 android:text="9"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/number6"
@@ -177,13 +188,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:backgroundTint="#333333"
                 android:onClick="pressSix"
                 android:text="6"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
                 android:textColorLink="@color/colorAccent"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/number3"
@@ -195,7 +206,8 @@
                 android:text="3"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/delete"
@@ -207,7 +219,8 @@
                 android:text="DEL"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
 
         <LinearLayout
@@ -228,7 +241,8 @@
                 android:text="÷"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/multiplication"
@@ -241,7 +255,8 @@
                 android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/subtraction"
@@ -254,7 +269,8 @@
                 android:text="-"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/addition"
@@ -267,7 +283,8 @@
                 android:text="+"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/equal"
@@ -280,7 +297,8 @@
                 android:text="="
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
